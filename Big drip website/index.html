@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://use.fontawesome.com/29bae53e02.js"></script>
+
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="./style.css">
+
+
+    <title>Big Drip Store</title>
+</head>
+<body>
+
+<div class="header"><img src="./icon.png" alt=""></div>
+
+    <!-- the images -->
+    <div class="swiper mySwiper">
+
+
+        <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="./01.jpg" alt="t-shirt">
+        </div>
+          <div class="swiper-slide"><img src="./02.jpg" alt="t-shirt">
+          </div>
+        <div class="swiper-slide"><img src="./03.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./04.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./05.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./06.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./07.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./08.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./09.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./10.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./11.jpg" alt="t-shirt">
+        </div>
+        <div class="swiper-slide"><img src="./12.jpg" alt="t-shirt">
+        </div>
+      </div>
+
+        <div class="swiper-pagination"></div>
+      
+      </div>
+  
+
+
+    <!-- the script -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+
+
+<section>
+</section>
+<ul>
+    
+    <li><a onclick="redirect2()"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+     loop: true,
+     autoplay: {
+         delay: 1000,
+         disableOnInteraction: false,
+     },
+    });
+
+
+
+
+    function redirect2()
+{
+    setTimeout(()=> window.open("https://www.instagram.com/big.drip.ao?utm_medium=copy_link/",'_blank'), 700)
+    
+}
+  </script>
+    
+</body>
+</html>
